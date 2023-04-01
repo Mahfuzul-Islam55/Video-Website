@@ -13,7 +13,7 @@ const Navbar = () => {
             <Search />
             <img
               className="inline h-4 cursor-pointer"
-              src="./assets/search.svg"
+              src="/search.svg"
               alt="Search"
             />
           </div>
