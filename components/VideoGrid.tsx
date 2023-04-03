@@ -22,7 +22,9 @@ const VideoGrid = () => {
   else if (!isLoading && !isError && videos?.length === 0)
     content = <div>No videos found</div>;
   else if (!isLoading && !isError && videos?.length > 0) {
-    content = videos.map((video) => <VideoGridItem video={video} />);
+    content = videos.map((video) => (
+      <VideoGridItem video={video} key={video.id} />
+    ));
   }
   return (
     <Fragment>

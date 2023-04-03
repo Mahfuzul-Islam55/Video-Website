@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { useDispatch, useSelector, TypedUseSelectorHook } from "react-redux";
 import VideosSlice from "./videos/VideosSlice";
+import TagsSlice from "./tags/TagsSlice";
 export const store = configureStore({
   reducer: {
     videos: VideosSlice,
+    tags: TagsSlice,
   },
 });
 
