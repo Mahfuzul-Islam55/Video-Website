@@ -10,8 +10,8 @@ import { Provider } from "react-redux";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
-      <Script src="https://cdn.tailwindcss.com" />
       <Provider store={store}>
+        <Script src="https://cdn.tailwindcss.com" />
         <Navbar />
         <Component {...pageProps} />
         <Footer />
