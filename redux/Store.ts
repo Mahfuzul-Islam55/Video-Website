@@ -4,12 +4,14 @@ import VideosSlice from "./videos/VideosSlice";
 import TagsSlice from "./tags/TagsSlice";
 import VideoSlice from "./video/VideoSlice";
 import RelatedVideosSlice from "./relatedVideos/RelatedVideosSlice";
+import FilterSlice from "./filter/FilterSlice";
 export const store = configureStore({
   reducer: {
     videos: VideosSlice,
     tags: TagsSlice,
     video: VideoSlice,
     relatedVideo: RelatedVideosSlice,
+    filter: FilterSlice,
   },
 });
 
