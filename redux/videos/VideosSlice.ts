@@ -30,10 +30,14 @@ const initialState: IInitialState = {
   error: "",
 };
 
+interface params {
+  tags: string[];
+  search: string;
+}
 export const fetchVideosAsync = createAsyncThunk(
   "videos/fetchVideos",
-  async () => {
-    const videos = await getVideos();
+  async ({ tags = [], search = "" }: params) => {
+    const videos = await getVideos(tags, search);
 
     return videos;
   }
